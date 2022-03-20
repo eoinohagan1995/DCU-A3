@@ -1,0 +1,24 @@
+public class C2_A3_Q3 {
+    public static void main(String[] args) {
+
+        int[] nums;
+        Scanner scanner=new Scanner(System.in);
+        System.out.print("How many even integers you want to enter: ");
+        int n = 0;
+        if(scanner.hasNextInt()) {
+            n=scanner.nextInt();
+        }
+        nums=new int[n];
+        for(int i=0;i<n;i++) {
+            System.out.printf("Enter even integer %d: ",i+1);
+            if(scanner.hasNextInt()) {
+                nums[i]=scanner.nextInt();
+            }
+        }
+        System.out.println("Original Array: "+ Arrays.toString(nums));
+        System.out.println("Modified Array:"+ ArraySum.findSum());
+
+
+
+        }
+    }
