@@ -1,0 +1,16 @@
+package findsum;
+
+public class ArraySum {
+    public static int findSum(int[] nums, int x, int length, int left) {
+
+        if (x == nums.length) {
+            return 0;
+        }
+        int right = findSum(nums, x + 1, length, left + nums[x]);
+        if (x % 2 == 0) {
+            nums[x] = left + right;
+        }
+        return nums[x] + right;
+
+    }
+}
