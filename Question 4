@@ -1,0 +1,23 @@
+package findsum;
+
+import static org.junit.Assert.assertArrayEquals;
+
+
+import org.junit.Test;
+
+
+public class C2_A3_Q4Test {
+    @Test
+     void test() {
+
+        int[] nums ={10};
+        int [] numsExpected ={0};
+
+        ArraySum.findSum(nums,nums.length,0,0);
+        assertArrayEquals(numsExpected,nums);
+
+    }
+
+
+
+}
